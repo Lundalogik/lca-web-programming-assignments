@@ -2,8 +2,8 @@
 
 ## Step 1 - Configure component toolbar
 
-### Step 1.1 Configure component toolbar (Create elements and bindings)
-* Add title text for tooolbar
+### Step 1.1 - Configure component toolbar (Create elements and bindings)
+* Add title text for toolbar
 * Add search field for city and country
   * Make sure that the search fields have observable values linked to them.
 * Add search button
