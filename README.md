@@ -19,7 +19,7 @@ Create a weather forecast app using Python as back end.
 5. Install the required packages with the command: <code>npm install</code>
     * Installs the requirements from the package.json file in the current folder.
 
-6. Install the gulp globally with the command: <code>npm install gulp -g</code>
+6. Install the gulp globally with the command: <code>npm install -g gulp</code>
     * Installs the gulp globally so that you can use it in the cmd wherever you are.
 
 7. Run the development server with the command: <code>gulp</code>
