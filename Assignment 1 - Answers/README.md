@@ -9,7 +9,7 @@
 * Add search button
   * When the search button is clicked, do an alert of the current city ad country value and confirm that it works.
 
-Be welcome to design it howerver you'd like :)
+Be welcome to design it however you'd like :)
 
 ### Step 1.2 - Configure component toolbar (Make Api requests)
 * Create you own API key from: https://openweathermap.org/appid
