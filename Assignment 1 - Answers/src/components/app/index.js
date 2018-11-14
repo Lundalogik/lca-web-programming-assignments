@@ -7,8 +7,10 @@ class App {
         this.searchError = ko.observable();
         this.cityForecasts = ko.observableArray();
 
-        this.searchResult.subscribe((newValue) => {
-            this.cityForecasts.unshift(new CityForecast(newValue));
+        this.searchResult.subscribe(forecastItem =>
+        {
+            var forecastModel = new CityForecast(forecastItem);
+            this.cityForecasts.unshift(forecastModel)
         });
     }
 }

@@ -1,18 +1,20 @@
 class WeatherItem {
     constructor(params) {
-        this.icon = params.weatherData.icon;
-        this.title = params.weatherData.title;
-        this.description = params.weatherData.description;
+        this.weatherData = params.weatherData;
     }
 }
- 
+
 const template = `
-<li class="media">
-    <img class="mr-3" data-bind="attr: {'src': icon}">
+<li class="list-group-item">
+<div class="media">
+    <img data-bind="attr:{'src':weatherData.icon}" class="mr-3" alt="Generic placeholder image">
     <div class="media-body">
-        <h5 class="mt-0 mb-1" data-bind="text: title"></h5>
-        <p data-bind="text: description"></p>
+        <h5 data-bind="text:weatherData.dateText + ' at ' + weatherData.time" class="mt-0"></h5>
+        <span data-bind="text:weatherData.weather" />
+        <span data-bind="text:'-'" />
+        <span data-bind="text:weatherData.temperature + ' degrees'" />
     </div>
+</div>
 </li>
 `;
 

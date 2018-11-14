@@ -1,7 +1,8 @@
 const texts = {
     toolbar: {
         title: 'Lime Forecaster',
-        defaultCountry: 'SE'
+        defaultCountry: 'SE',
+        searchButtonText: 'Search',
     },
     errors: {
         errorHelp: 'Make sure you provided a valid city and country.',

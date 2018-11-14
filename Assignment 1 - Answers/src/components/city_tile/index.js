@@ -5,15 +5,13 @@ class CityTile {
 }
 
 const template = `
-<li class="list-group-item">
-    <div class="d-flex w-100 justify-content-between">
-        <h4 class="mb-1" data-bind="text: cityForecast.name"></h4>
+<li class="mt-sm-3">
+    <div class="card">
+        <h5 class="card-header" data-bind="text:cityForecast.cityname + ', ' + cityForecast.country" ></h5>
+        <ul class="list-group" data-bind="foreach: cityForecast.forecast">
+            <weather-item params="weatherData: $data"></weather-item>
+        </ul>
     </div>
-    <ul class="list-unstyled">
-        <!-- ko foreach: cityForecast.forecast -->
-        <weather-item params="weatherData: $data"></weather-item>
-        <!-- /ko -->
-    </ul>
 </li>
 `;
 
