@@ -61,7 +61,7 @@ Be welcome to design it however you'd like :)
 ## Step 4.1 - Configure component <code>city_tile</code>
 * The constructor will input an object called "params" that contains a <code>CityForecast</code> model called <code>cityForecast</code>. Store that param in the class.
   * Using <code>this.cityForecast = params.cityForecast</code>
-* Configure the template of the component (Important: The root must be a <code>li</code> element, because the <code>city-list</code> component uses foreach on an <code>ul</code> so all children must be of type <code>li<code>)
+* Configure the template of the component (Important: The root must be a <code>li</code> element, because the <code>city-list</code> component uses foreach on an <code>ul</code> so all children must be of type <code>li</code>)
   * Add a title containg what you'd like (i.e the city name and country)
   * Create an <code>ul</code> element with a <code>foreach</code> binding (using <code>knockout</code>)
     * Add what styling you'd like using bootstrap. (For example <code>list-group</code>)
