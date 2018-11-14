@@ -72,8 +72,8 @@ _Be welcome to design it however you'd like :)_
 #### Step 3.3 Use the parsing & make sure that it works
 
 ##### Step 3.3.1 Make sure that it works (component <code>app</code>)
-  1. The searchResult observable will be changed everytime the user search for something in the web app.
-  2. Try to use <code>Knockouts</code> <code>subscribe</code> function to create a new <code>CityForecast</code> model from the new search value when a user search.
+  * The searchResult observable will be changed everytime the user search for something in the web app.
+  * Try to use <code>Knockouts</code> <code>subscribe</code> function to create a new <code>CityForecast</code> model from the new search value when a user search.
   * Alert the newly created <code>CityForecast</code> model and see if the parsing went well. (use <code>JSON.stringify</code>)
 
 ##### Step 3.3.2 Store the parsed <code>CityForecast</code> model in the <code>cityForecasts</code> observableArray
