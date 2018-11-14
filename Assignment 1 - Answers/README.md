@@ -15,6 +15,7 @@ Be welcome to design it however you'd like :)
 * Create you own API key from: https://openweathermap.org/appid
   * You'll have to sign up and create it. (May take up to an hour before it works)
 * The API request is already created fo you, so just need to use it.
+   * You must insert you API-key in the <code>utilities/api</code>
 * Use <code>getForecast</code> function from the <code>utilities/api</code> module in your search function.
   * The function will return a promise, so use <code>then</code> and <code>catch</code> for handling result.
 * Alert the results to make sure that they work. (use <code>JSON.stringify</code>)
