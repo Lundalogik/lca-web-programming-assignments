@@ -11,7 +11,7 @@ Create a weather forecast app using Python as back end.
   
 3. Open a command prompt such as cmd or Power Shell.
 
-4. Browse to the folder: <code>"%repoRoot%\Assignment 1"</code>
+4. Browse to the folder: <code>"%repoRoot%\Assignments\Assignment 1"</code>
 
 5. Install the required packages with the command: <code>npm install</code>
     * Installs the requirements from the package.json file in the current folder.
