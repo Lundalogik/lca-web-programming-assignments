@@ -1,0 +1,8 @@
+# Ignore dependencies
+/node_modules
+
+# Ignore production
+/build
+
+# Ignore misc
+npm-debug.log*
