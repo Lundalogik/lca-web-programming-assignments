@@ -59,9 +59,9 @@ _Be welcome to design it however you'd like :)_
   * You can get an error by searching for a city that doesn't exist i.e. "asgkhhaogoah"
 
 ### Step 2 - Configure component <code>toolbar</code> & <code>error-message</code> (Handling response)
-#### Step 2.1 - Configure component <code>toolbar</code> (Use the given parameter searchError)
-* The constructor will input an object called "params" that contains an observable called "searchError". Store that param in the class.
-* Set the value of that observable with the error message from the api.
+#### Step 2.1 - Configure component <code>toolbar</code> (Use the given parameter <code>searchError</code> and <code>searchResult</code> )
+* The constructor will input an object called "params" that contains two observables called "searchError" and "searchResult". Store those params in the class.
+* Set the value of the observable <code>searchError</code> with the error message from the api.
 
 #### Step 2.2 - Configure component <code>error-message</code> (Show message to user)
 * The constructor will input an object called "params" that contains an observable called "error". Store that param in the class.
@@ -83,14 +83,17 @@ _Be welcome to design it however you'd like :)_
     * Use <code>calendar</code> in moment to get for example, "Today", "Tomorrow"
     * You can get an icon image from openweathermap's api (See <code>https://openweathermap.org/weather-conditions</code>)
 
-#### Step 3.3 Use the parsing & make sure that it works
+#### Step 3.3 - Add the parsed searchResult model to the searchResults (component <code>toolbar</code>)
+* Set the value of the observable <code>searchResult</code> with the parsed model from the api.
 
-##### Step 3.3.1 Make sure that it works (component <code>app</code>)
+#### Step 3.4 Use the parsing & make sure that it works
+
+##### Step 3.4.1 Make sure that it works (component <code>app</code>)
   * The searchResult observable will be changed everytime the user search for something in the web app.
   * Try to use <code>Knockouts</code> <code>subscribe</code> function to create a new <code>CityForecast</code> model from the new search value when a user search.
   * Alert the newly created <code>CityForecast</code> model and see if the parsing went well. (use <code>JSON.stringify</code>)
 
-##### Step 3.3.2 Store the parsed <code>CityForecast</code> model in the <code>cityForecasts</code> observableArray
+##### Step 3.4.2 Store the parsed <code>CityForecast</code> model in the <code>cityForecasts</code> observableArray
   * Insert the newly created <code>CityForecast</code> model using <code>unshift</code> _(Puts the object first in the array)_ to the <code>cityForecasts</code> array
 
 ### Step 4 - Use the parsed models and show them in the web app
