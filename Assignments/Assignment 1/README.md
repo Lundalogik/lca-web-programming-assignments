@@ -22,6 +22,20 @@ Create a weather forecast app using Python as back end.
 7. Run the development server with the command: <code>gulp</code>
     * Executes the commands in the gulpfile.js file
 
+## Structure of web app
+You should do all your changes in the <code>src</code> folder.
+Gulp will handle everything regarding the build and such.
+
+In the <code>src</code> you will find several folders:
+* <code>components</code> - this is where all the custom components is stored. They contain logic (js) and a view (html)
+* <code>models</code> - this is for storing multiple values in a single object.
+* <code>resources</code> - this is where you have your resources:
+   * Images and icons
+   * Constant values, texts.
+   * Localization and so on.
+* <code>styles</code> - All custom css (Design of the web app
+* <code>utilities</code> - utilities that you need, ie. api calls.
+
 ## What to do
 
 ### Step 1 - Configure component toolbar
