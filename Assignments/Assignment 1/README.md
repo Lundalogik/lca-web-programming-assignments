@@ -22,6 +22,20 @@ Create a weather forecast app using Python as back end.
 7. Run the development server with the command: <code>gulp</code>
     * Executes the commands in the gulpfile.js file
 
+## Structure of web app
+You should do all your changes in the <code>src</code> folder.
+Gulp will handle everything regarding the build and such.
+
+In the <code>src</code> you will find several folders:
+* <code>components</code> - this is where all the custom components is stored. They contain logic (js) and a view (html)
+* <code>models</code> - this is for storing multiple values in a single object.
+* <code>resources</code> - this is where you have your resources:
+   * Images and icons
+   * Constant values, texts.
+   * Localization and so on.
+* <code>styles</code> - All custom css (Design of the web app
+* <code>utilities</code> - utilities that you need, ie. api calls.
+
 ## What to do
 
 ### Step 1 - Configure component toolbar
@@ -45,9 +59,10 @@ _Be welcome to design it however you'd like :)_
   * You can get an error by searching for a city that doesn't exist i.e. "asgkhhaogoah"
 
 ### Step 2 - Configure component <code>toolbar</code> & <code>error-message</code> (Handling response)
-#### Step 2.1 - Configure component <code>toolbar</code> (Use the given parameter searchError)
-* The constructor will input an object called "params" that contains an observable called "searchError". Store that param in the class.
-* Set the value of that observable with the error message from the api.
+#### Step 2.1 - Configure component <code>toolbar</code> (Use the given parameter <code>searchError</code> and <code>searchResult</code> )
+* The constructor will input an object called "params" that contains two observables called "searchError" and "searchResult". Store those params in the class.
+* Set the value of the observable <code>searchError</code> with the error message from the api.
+* Set the value of the observable <code>searchResult</code> with the data from the api.
 
 #### Step 2.2 - Configure component <code>error-message</code> (Show message to user)
 * The constructor will input an object called "params" that contains an observable called "error". Store that param in the class.
